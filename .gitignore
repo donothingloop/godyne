@@ -1,5 +1,6 @@
 
 # Created by https://www.gitignore.io/api/vim,git,go
+config.json
 
 ### Vim ###
 # swap
