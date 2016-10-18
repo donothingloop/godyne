@@ -31,6 +31,9 @@ To add the user to godyne, add the hash to the config.json:
 },
 ```
 
+# License
+This project is licensed under the MIT license.
+
 # Installation
 
 **Please check that you have configured your local GO installation according to this tutorial: https://golang.org/doc/install**
