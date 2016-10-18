@@ -9,7 +9,7 @@ import (
     "os"
     "flag"
     "github.com/golang/glog"
-    "./lib"
+    "github.com/donothingloop/godyne/lib"
 )
 
 func usage() {
