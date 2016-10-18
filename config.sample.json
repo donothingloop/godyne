@@ -1,0 +1,25 @@
+{
+    "dns": {
+        "nameserver": "nameserver.yourdomain.invalid",
+        "ttl": 3600
+    },
+    "zones": {
+        "wq.lc": {
+            "key": "key.update.:UDPATEKEYHERE"
+        }
+    },
+    "users": {
+        "admin": {
+            "password": "$2a$10$TuJVkCEQfRQvQCO3qdrIo.NbMiKzjeMJ1xDZvAyHyo4PAsM7JHivi"
+        }
+    },
+    "records": { 
+        "afu.wq.lc": {
+            "zone": "ddns.yourdomain.invalid",
+            "users": ["admin"],
+            "aliases": [
+                "alias.yourdomain.invalid"
+            ]
+        }
+    }
+}
