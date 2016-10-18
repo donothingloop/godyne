@@ -59,7 +59,7 @@ mkdir /etc/godyne/
 cp config.sample.js /etc/godyne/config.js
 ```
 
-Also create the user for godyne **(do not run this as root)**:
+Also create the user for godyne **(do not run godyne as root)**:
 ```
 sudo useradd -r -s /bin/false godyne
 ```
