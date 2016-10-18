@@ -32,7 +32,12 @@ type UserConfig struct {
     Password string `json:"password"`
 }
 
+type ServerConfig struct {
+    Port uint `json:"port"`
+}
+
 type Config struct {
+    Server *ServerConfig `json:"server"`
     DnsConfig *DnsConfig `json:"dns"`
     Zones map[string]*ZoneConfig `json:"zones"`
     Records map[string]*RecordConfig `json:"records"`

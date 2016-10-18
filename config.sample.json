@@ -1,4 +1,7 @@
 {
+    "server": {
+        "port": 33009
+    },
     "dns": {
         "nameserver": "nameserver.yourdomain.invalid",
         "ttl": 3600

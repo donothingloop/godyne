@@ -66,11 +66,11 @@ func httpLog(handler http.Handler) http.Handler {
 }
 
 func (api *ApiHTTP) Start() {
-    glog.Info("Listening on port 33009")
+    glog.Info("Listening on port " + api.Config.Server.port)
 
     authenticator := auth.NewBasicAuthenticator("godyne", api.handleAuth)
     http.HandleFunc("/api/update", authenticator.Wrap(api.update))
-    http.ListenAndServe(":33009", httpLog(http.DefaultServeMux))
+    http.ListenAndServe(":" + api.Config.Server.port, httpLog(http.DefaultServeMux))
 }
 
 func NewHttpApi(dns *DNSUpdater, cfg *Config) (*ApiHTTP, error) {
