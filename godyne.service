@@ -1,0 +1,13 @@
+[Unit]
+Description=godyne DDNS updater
+After=network.target
+
+[Service]
+User=godyne
+Group=godyne
+Restart=always
+ExecStart=$GOPATH/bin/godyne
+WorkingDirectory=/etc/godyne/
+
+[Install]
+WantedBy=multi-user.target
