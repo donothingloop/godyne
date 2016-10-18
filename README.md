@@ -1,3 +1,6 @@
+[![license](https://img.shields.io/github/license/donothingloop/godyne.svg)]()
+[![GitHub issues](https://img.shields.io/github/issues/donothingloop/godyne.svg)]()
+
 # godyne - Dynamic DNS updater
 
 This project is a dynamic DNS updater with a standard API. It can be used to map your own domains to dynamic IP addresses.
