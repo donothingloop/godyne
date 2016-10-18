@@ -19,7 +19,7 @@ func usage() {
 
 func init() {
     flag.Parse()
-    flag.Lookup("logtostderr").Value.Set("true")
+    //flag.Lookup("logtostderr").Value.Set("true")
 }
 
 func main() {
