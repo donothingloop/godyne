@@ -34,6 +34,12 @@ To add the user to godyne, add the hash to the config.json:
 },
 ```
 
+# Deploying
+
+As this project is very new I would not recommend to use it in a production environment.
+
+But if you try and it works fins, I would proxy requests through a reverse proxy like *nginx* and enable *HTTPS* support.
+
 # License
 This project is licensed under the MIT license.
 
