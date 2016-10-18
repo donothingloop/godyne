@@ -6,6 +6,7 @@
 package godyne
 
 import (
+    "fmt"
     "io"
     "net/http"
     "github.com/golang/glog"
@@ -66,11 +67,11 @@ func httpLog(handler http.Handler) http.Handler {
 }
 
 func (api *ApiHTTP) Start() {
-    glog.Info("Listening on port " + api.Config.Server.Port)
+    glog.Infof("Listening on port %d", api.Config.Server.Port)
 
     authenticator := auth.NewBasicAuthenticator("godyne", api.handleAuth)
     http.HandleFunc("/api/update", authenticator.Wrap(api.update))
-    http.ListenAndServe(":" + api.Config.Server.Port, httpLog(http.DefaultServeMux))
+    http.ListenAndServe(fmt.Sprintf(":%d", api.Config.Server.Port), httpLog(http.DefaultServeMux))
 }
 
 func NewHttpApi(dns *DNSUpdater, cfg *Config) (*ApiHTTP, error) {
