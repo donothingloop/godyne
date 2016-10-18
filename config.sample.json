@@ -7,7 +7,7 @@
         "ttl": 3600
     },
     "zones": {
-        "wq.lc": {
+        "example.com": {
             "key": "key.update.:UDPATEKEYHERE"
         }
     },
@@ -17,7 +17,7 @@
         }
     },
     "records": { 
-        "afu.wq.lc": {
+        "example.com": {
             "zone": "ddns.yourdomain.invalid",
             "users": ["admin"],
             "aliases": [
